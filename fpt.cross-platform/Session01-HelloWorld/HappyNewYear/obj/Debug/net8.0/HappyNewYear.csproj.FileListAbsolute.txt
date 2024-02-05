@@ -1,0 +1,14 @@
+D:\app-study\fpt.cross-platform\Session01-HelloWorld\HappyNewYear\bin\Debug\net8.0\HappyNewYear.exe
+D:\app-study\fpt.cross-platform\Session01-HelloWorld\HappyNewYear\bin\Debug\net8.0\HappyNewYear.deps.json
+D:\app-study\fpt.cross-platform\Session01-HelloWorld\HappyNewYear\bin\Debug\net8.0\HappyNewYear.runtimeconfig.json
+D:\app-study\fpt.cross-platform\Session01-HelloWorld\HappyNewYear\bin\Debug\net8.0\HappyNewYear.dll
+D:\app-study\fpt.cross-platform\Session01-HelloWorld\HappyNewYear\bin\Debug\net8.0\HappyNewYear.pdb
+D:\app-study\fpt.cross-platform\Session01-HelloWorld\HappyNewYear\obj\Debug\net8.0\HappyNewYear.GeneratedMSBuildEditorConfig.editorconfig
+D:\app-study\fpt.cross-platform\Session01-HelloWorld\HappyNewYear\obj\Debug\net8.0\HappyNewYear.AssemblyInfoInputs.cache
+D:\app-study\fpt.cross-platform\Session01-HelloWorld\HappyNewYear\obj\Debug\net8.0\HappyNewYear.AssemblyInfo.cs
+D:\app-study\fpt.cross-platform\Session01-HelloWorld\HappyNewYear\obj\Debug\net8.0\HappyNewYear.csproj.CoreCompileInputs.cache
+D:\app-study\fpt.cross-platform\Session01-HelloWorld\HappyNewYear\obj\Debug\net8.0\HappyNewYear.dll
+D:\app-study\fpt.cross-platform\Session01-HelloWorld\HappyNewYear\obj\Debug\net8.0\refint\HappyNewYear.dll
+D:\app-study\fpt.cross-platform\Session01-HelloWorld\HappyNewYear\obj\Debug\net8.0\HappyNewYear.pdb
+D:\app-study\fpt.cross-platform\Session01-HelloWorld\HappyNewYear\obj\Debug\net8.0\HappyNewYear.genruntimeconfig.cache
+D:\app-study\fpt.cross-platform\Session01-HelloWorld\HappyNewYear\obj\Debug\net8.0\ref\HappyNewYear.dll

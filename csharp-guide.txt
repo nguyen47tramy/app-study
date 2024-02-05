@@ -1,0 +1,93 @@
+Bài 1: Bắt đầu với C# và lập trình đa nền tảng
+
+.SDK (software development kit) gói phần mềm có sẵn từ vendor - nhà cung cấp nào đó mà thường là bên tạo ra / cung cấp ngôn ngữ lập trình kèm theo cú pháp gõ, câu lệnh cần gõ.
+=. SDK là từ chung chỉ về nhóm phần mềm giúp dev làm phần mềm
+=> SDk có thể mở rộng cho các thiết bị có hỗ trợ lập trình: Card đồ họa, thiết bị IOT, Đều có cung cáp SDK Thư viện/ phần mềm lập trình giúp giao tiếp với chính thiết bị đó.
+
+.NET - công nghệ, kĩ thuật, nền tảng, không gian (hạ tầng) được tạo ra bởi Microsoft để giúp dev làm các loại app chạy được trên nhiều hệ điều hành (CROSS PLATFORM)
+=. Có sự khác biệt giữa .net phiên bản chẵn (được hỗ trợ lâu hơn) và phiên bản lẻ (5.0, 7.0)(là phiên bản thử nghiệm để rồi tích hợp vào phiên bản chẵn).
+=. Lịch sử:ban đầu .NET FRAMWORK (chỉ có đến ver4.8) là chỉ chạy trên windows, sau này windows 	   .NET CORE (chỉ có đến ver3.1) có chạy đa nền tảng
+	hợp nhất 2 .Net lại, nhảy cóc version thành 5.0, rồi từ đó thành .NET
+=. .NET SDK là bộ đồ chơi lập trình cho dev viết app theo công nghệ .NET (version 8. )
+=. Khi cài .NET, ta có:
+	- SDK, C:\Program Files\dotnet\sdk\version 6 7 8	tương đương JDK
+	- Runtime (bao gồm: 		C:\PROGRAM FILES\SHARED	tương đương JRE
+			- ASP .NET CORE				Java Runtime 
+			- .NET DESKTOP					Environment
+			- .NET RUNTIME	
+=. GIẢI THÍCH VỀ RUNTIME
+Khi dùng nnlt để viết code	App Console	Window Desktop 		Web/Web API
+
+Cần SDK để 
+viết lệnh tạo thành file 	  .CS .VB	      .CS		    .CS
+
+Cần SDK để 
+biến đổi lệnh thành lệnh máy, file .DLL .EXE	      .EXE                  .DLL
+
+				   (RUNTIME)	    (RUNTIME)              (RUNTIME)				
+Giao tiếp với các loại HĐH		OS		OS                   OS
+Tuy nhiên mỗi HĐH chạy trên phần cứng khác nhau, nên có thêm phần RUNTIME để giao tiếp cầu nối với HĐH	
+=> ý nghĩa đa nền tảng nằm ở RUNTIMES, runtime phụ thuộc hệ điều hành, còn chương trình viết ra thì không, mà để chương trìn viết ra không phụ thuộc (đa nền) thì phải có đầy đủ ver runtime.
+ 
+.dotPeek
+
+I.KIỂM TRA .NET SDK & RUNTIME -LÀM QUEN VỚI CLI - COMMAND LINE INTERFACE - GÕ LỆNH THAO TÁC TRÊN MÔI TRƯỜNG .NET
+- Biến môi trường: lệnh dotnet đã được khai báo trong biến môi trường (enviromental variables) lúc setup .net
+
+1. Mở cmd để xem SDK đã cài đủ chưa?? bằng các lệnh:
+
+dotnet --version 
+=. ktra version mới nhất
+
+dotnet --list-sdks
+=. ktra các version 
+
+dotnet --list-runtimes
+=. kiểm tra version runtimes
+
+dotnet --info
+=. 
+
+cls
+=. clear screen
+
+2. DOTNET CLI
+- Tập hợp nhóm lệnh giúp làm các công việc liên quan đến việc tạo dự án, biên dịch chương trình trên cửa sổ commanad line
+
+dotnet -h
+
+dotnet new console --framework net8.0 --use-program-main
+=. tạo app console và các file của nó trong thư mục
+
+dotnet build
+=. Biên dịch, tạo ra file bin ( bao gồm file .dll)
+=. SDK sẽ dùng tool MSBuild để tạo ra file nhị phân .dll và .exe dành riêng cho windows ở thư mục \bin\debug\8.0
+
+dotnet run 
+=. chạy app console trên cmd hoặc mở .exe
+
+II. TOOL
+1. NGÔN NGỮ LẬP TRÌNH
+
+- C#, VB .NET, C++ .NET, F# -> của microsoft, dùng chung .NET RUMTIME, SDK
+
+- JAVA, GROOVY, SCALA -> dùng chung JDK, JRE
+
+2. CẦN SDK (CLI)
+
+3. cÔNG CỤ GÕ CODE
+
+3.1 CÔNG CỤ HẠNG NHẸ GÕ TEXT: NOTEPAD
+
+3.2 CÔNG CỤ HẠNG VỪA GÕ TEXT, CÓ PLUGIN: CODE EDITOR: SUDLIME, VS CODE
+
+3.3 CÔNG CỤ HẠNG NẶNG - IDE - INTEGRATED DEVELOPMENT ENVIRONMENT
+- Có tích hợp nhiều thứ, ít cần plugin,, extension
+- Nhiều khi cài thường có luôn SDK
+.NET -> VS - VISUAL STUDIO (MICROSOFT), RIDER (JETBRAIN)
+.JAVA -> NETBEANS (ORACLE/APACHE), ECLIPSE (IBM), INTELLIJ (JETBRAIN)
+
+=================================================================================
+=================================================================================
+BÀI 2: CÀI ĐẶT TOOL VISUAL STUDIO
+
