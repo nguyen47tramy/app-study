@@ -1,0 +1,15 @@
+D:\app-study\fpt.cross-platform\Session02-Language\HappyNewYear\Bmi\bin\Debug\net8.0\Bmi.exe
+D:\app-study\fpt.cross-platform\Session02-Language\HappyNewYear\Bmi\bin\Debug\net8.0\Bmi.deps.json
+D:\app-study\fpt.cross-platform\Session02-Language\HappyNewYear\Bmi\bin\Debug\net8.0\Bmi.runtimeconfig.json
+D:\app-study\fpt.cross-platform\Session02-Language\HappyNewYear\Bmi\bin\Debug\net8.0\Bmi.dll
+D:\app-study\fpt.cross-platform\Session02-Language\HappyNewYear\Bmi\bin\Debug\net8.0\Bmi.pdb
+D:\app-study\fpt.cross-platform\Session02-Language\HappyNewYear\Bmi\obj\Debug\net8.0\Bmi.GeneratedMSBuildEditorConfig.editorconfig
+D:\app-study\fpt.cross-platform\Session02-Language\HappyNewYear\Bmi\obj\Debug\net8.0\Bmi.AssemblyInfoInputs.cache
+D:\app-study\fpt.cross-platform\Session02-Language\HappyNewYear\Bmi\obj\Debug\net8.0\Bmi.AssemblyInfo.cs
+D:\app-study\fpt.cross-platform\Session02-Language\HappyNewYear\Bmi\obj\Debug\net8.0\Bmi.csproj.CoreCompileInputs.cache
+D:\app-study\fpt.cross-platform\Session02-Language\HappyNewYear\Bmi\obj\Debug\net8.0\Bmi.sourcelink.json
+D:\app-study\fpt.cross-platform\Session02-Language\HappyNewYear\Bmi\obj\Debug\net8.0\Bmi.dll
+D:\app-study\fpt.cross-platform\Session02-Language\HappyNewYear\Bmi\obj\Debug\net8.0\refint\Bmi.dll
+D:\app-study\fpt.cross-platform\Session02-Language\HappyNewYear\Bmi\obj\Debug\net8.0\Bmi.pdb
+D:\app-study\fpt.cross-platform\Session02-Language\HappyNewYear\Bmi\obj\Debug\net8.0\Bmi.genruntimeconfig.cache
+D:\app-study\fpt.cross-platform\Session02-Language\HappyNewYear\Bmi\obj\Debug\net8.0\ref\Bmi.dll

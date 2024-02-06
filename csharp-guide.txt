@@ -6,8 +6,8 @@ Bài 1: Bắt đầu với C# và lập trình đa nền tảng
 
 .NET - công nghệ, kĩ thuật, nền tảng, không gian (hạ tầng) được tạo ra bởi Microsoft để giúp dev làm các loại app chạy được trên nhiều hệ điều hành (CROSS PLATFORM)
 =. Có sự khác biệt giữa .net phiên bản chẵn (được hỗ trợ lâu hơn) và phiên bản lẻ (5.0, 7.0)(là phiên bản thử nghiệm để rồi tích hợp vào phiên bản chẵn).
-=. Lịch sử:ban đầu .NET FRAMWORK (chỉ có đến ver4.8) là chỉ chạy trên windows, sau này windows 	   .NET CORE (chỉ có đến ver3.1) có chạy đa nền tảng
-	hợp nhất 2 .Net lại, nhảy cóc version thành 5.0, rồi từ đó thành .NET
+=. Lịch sử:ban đầu .NET FRAMWORK (chỉ có đến ver4.8) là chỉ chạy trên windows, và .NET CORE (chỉ có đến ver3.1) có chạy đa nền tảng
+sau này windows hợp nhất 2 .Net lại, nhảy cóc version thành 5.0, rồi từ đó thành .NET
 =. .NET SDK là bộ đồ chơi lập trình cho dev viết app theo công nghệ .NET (version 8. )
 =. Khi cài .NET, ta có:
 	- SDK, C:\Program Files\dotnet\sdk\version 6 7 8	tương đương JDK
@@ -69,7 +69,7 @@ dotnet run
 II. TOOL
 1. NGÔN NGỮ LẬP TRÌNH
 
-- C#, VB .NET, C++ .NET, F# -> của microsoft, dùng chung .NET RUMTIME, SDK
+- C#, Visual Basic .NET, C++ .NET, F# -> của microsoft, dùng chung .NET RUMTIME, SDK
 
 - JAVA, GROOVY, SCALA -> dùng chung JDK, JRE
 
@@ -82,7 +82,7 @@ II. TOOL
 3.2 CÔNG CỤ HẠNG VỪA GÕ TEXT, CÓ PLUGIN: CODE EDITOR: SUDLIME, VS CODE
 
 3.3 CÔNG CỤ HẠNG NẶNG - IDE - INTEGRATED DEVELOPMENT ENVIRONMENT
-- Có tích hợp nhiều thứ, ít cần plugin,, extension
+- Có tích hợp nhiều thứ, ít cần plugin, extension
 - Nhiều khi cài thường có luôn SDK
 .NET -> VS - VISUAL STUDIO (MICROSOFT), RIDER (JETBRAIN)
 .JAVA -> NETBEANS (ORACLE/APACHE), ECLIPSE (IBM), INTELLIJ (JETBRAIN)
@@ -91,3 +91,12 @@ II. TOOL
 =================================================================================
 BÀI 2: CÀI ĐẶT TOOL VISUAL STUDIO
 
+- Visual studio đã bao gồm SDK
+- Visual Studio sẽ tải bản mồi (ít dung lượng) về rồi sau khi dùng nó sẽ cài thêm những thứ khác nữa (cơ chế cài qua web, cần đến đâu cài đến đó)
+- Khi muốn lựa chọn cài đặt thêm thì mở lại file mồi exe để chọn cài
+
+=. APP HỖ TRỢ/ CHẠY ĐA NỀN (HĐH + phần cứng mà HĐH chạy trên)			   ví dụ windows chạy trên CPU ARM, INTEL, AMD
+		         MAC                   ARM, M1, ...	
+=. .DLL chạy được cả wins, linux và không phải viết lại source code (file .cs, .java). Bên Java gọi cái này là "Write once, run any where" (thương hiệu của java)
+
+- Một Solution có nhiều Project
