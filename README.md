@@ -1,6 +1,6 @@
-# Hello this is my App STUDY project
+# Hello this is my App STUDY repo
 
-This project contains ALL the resources learned to create applications (website, desktop, console and cross-platforms).
+This repo contains ALL the resources learned to create applications (website, desktop, console and cross-platforms).
 
 ## You will find in this repo:
 
