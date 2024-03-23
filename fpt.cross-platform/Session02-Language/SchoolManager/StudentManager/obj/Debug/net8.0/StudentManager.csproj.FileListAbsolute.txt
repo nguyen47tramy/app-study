@@ -1,0 +1,15 @@
+D:\app-study\fpt.cross-platform\Session02-Language\SchoolManager\StudentManager\bin\Debug\net8.0\StudentManager.exe
+D:\app-study\fpt.cross-platform\Session02-Language\SchoolManager\StudentManager\bin\Debug\net8.0\StudentManager.deps.json
+D:\app-study\fpt.cross-platform\Session02-Language\SchoolManager\StudentManager\bin\Debug\net8.0\StudentManager.runtimeconfig.json
+D:\app-study\fpt.cross-platform\Session02-Language\SchoolManager\StudentManager\bin\Debug\net8.0\StudentManager.dll
+D:\app-study\fpt.cross-platform\Session02-Language\SchoolManager\StudentManager\bin\Debug\net8.0\StudentManager.pdb
+D:\app-study\fpt.cross-platform\Session02-Language\SchoolManager\StudentManager\obj\Debug\net8.0\StudentManager.GeneratedMSBuildEditorConfig.editorconfig
+D:\app-study\fpt.cross-platform\Session02-Language\SchoolManager\StudentManager\obj\Debug\net8.0\StudentManager.AssemblyInfoInputs.cache
+D:\app-study\fpt.cross-platform\Session02-Language\SchoolManager\StudentManager\obj\Debug\net8.0\StudentManager.AssemblyInfo.cs
+D:\app-study\fpt.cross-platform\Session02-Language\SchoolManager\StudentManager\obj\Debug\net8.0\StudentManager.csproj.CoreCompileInputs.cache
+D:\app-study\fpt.cross-platform\Session02-Language\SchoolManager\StudentManager\obj\Debug\net8.0\StudentManager.sourcelink.json
+D:\app-study\fpt.cross-platform\Session02-Language\SchoolManager\StudentManager\obj\Debug\net8.0\StudentManager.dll
+D:\app-study\fpt.cross-platform\Session02-Language\SchoolManager\StudentManager\obj\Debug\net8.0\refint\StudentManager.dll
+D:\app-study\fpt.cross-platform\Session02-Language\SchoolManager\StudentManager\obj\Debug\net8.0\StudentManager.pdb
+D:\app-study\fpt.cross-platform\Session02-Language\SchoolManager\StudentManager\obj\Debug\net8.0\StudentManager.genruntimeconfig.cache
+D:\app-study\fpt.cross-platform\Session02-Language\SchoolManager\StudentManager\obj\Debug\net8.0\ref\StudentManager.dll

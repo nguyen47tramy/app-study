@@ -99,4 +99,20 @@ BÀI 2: CÀI ĐẶT TOOL VISUAL STUDIO
 		         MAC                   ARM, M1, ...	
 =. .DLL chạy được cả wins, linux và không phải viết lại source code (file .cs, .java). Bên Java gọi cái này là "Write once, run any where" (thương hiệu của java)
 
-- Một Solution có nhiều Project
+- Một Solution có nhiều Project, có những project chỉ đóng vai trò làm thư viện (reference đến một project)
+
+===================================================================
+===================================================================
+YEAR END CODE PARTY
+
+=. Trong java có hai hình thái dữ liệu
+   - Primitive data type: dữ liệu đơn, tốn 1 vùng ram
+     (int, long, float, double, char, boolean)
+   - Object data type, hay reference data type, "pointer": tốn 2 vùng ram, 1 vùng tên gọi / biến và 1 vùng new, vùng object
+     (String, File, Excetion, Randon, Math, Dog, Cat, ...)
+
+=. C# gần giống với Java, có hai hình thái dữ liệu
+   - Value type: tốn một vùng ram, tương đương primitve
+     (int, long, float, double, char, bool)
+   - Reference data type, "pointer": tốn 2 vùng ram, 1 vùng tên gọi / biến và 1 vùng new, vùng object
+     (string, String, File, Exception, Random, Math, ...) 
