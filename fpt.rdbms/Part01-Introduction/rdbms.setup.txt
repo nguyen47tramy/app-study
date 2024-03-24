@@ -1,0 +1,63 @@
+CÀI ĐẶT SQL SEVER
+
+1. file mồi (tải tiếp khi có mạng)
+	- lựa chọn Basic/Custom/Download Media
+	- Nên chọn Custiom vì Basic nhiều khi thiếu
+	- LocalIDB(53MB): phiên bản nhúng, chơi trên điện thoại di động, nhẹ
+	- Express Advanced: bản full (download)
+	- => bản server 
+
+2. sever và client
+	- tải thêm SSMS SQL Server Management Studio
+	- hai bản server là thao tác với database => để giao tiếp với cơ sở dữ liệu cần download thêm bản client
+	
+
+3. instances:
+	- mỗi lần chạy sql là một lần nó ghi dữ liệu vào một vùng nhớ trên ram (giống khái niệm object/instance trong oop)
+	- mỗi lần chạy nó sẽ sinh ra những server ngầm bên trong để phục vụ dữ liệu (được gọi là instance)
+tương đương với object => tạo một biến con trỏ như sau:
+Student 	an 	= new Student(id, name, yob)
+sqlsrv.exe   tên instance       => đi vào ram chờ	
+			  => instance
+			  => cần được đặt tên để sử dụng(đặt tên server, giống tên biến)
+khi cài file => xuất hiện file thực thi exe trên đĩa cứng: sqlsrv.exe, đây là file con trỏ, khi chạy thì nó sẽ tạo instance của data đi vào ram để chờ ai đó yêu cầu xử lý data.
+
+4. WINDOWS CÓ 1 DATA NỘI BỘ (DẠNG CÂY PHÂN CẤP) QUẢN LÝ THÔNG SỐ MÁY, CÁC APP CÀI VÀO... => GỌI LÀ REGISTRY (windows run => regedit để xem)
+windows sẽ đi tìm tên server (instance) trong registry, mà tên sever được ánh xạ trong đường dẫn cài.( map với điã cứng thông qua đường dẫn, trong registry)
+==> MỖI LẦN CHẠY FILE EXE THÌ WINDOWS SẼ LẤY FILE MÌNH CÀI, TẢI VÀO TRONG RAM RỒI ĐẶT TÊN (INSTANCE => GIỐNG QUÁ TRÌNH NEW MỘT OBJECT)
+Khi cài lại thì nó sẽ map thêm một tên khác nữa trong cùng ổ đĩa (tương đương new thêm sinh viên)
+
+5. Collation
+	Là một kỹ thuật cấu hình của database giúp mình có khả năng sort data, select data, tìm data theo đúng chữ hoa thường hay không.
+	Sql server mặc định chữ hoa chữ thường là như nhau
+
+6. Log
+Nhật ký cài đặt hay log sẽ nằm trong thư mục C:\Program Files\Microsoft SQL Server\160\Setup Bootstrap\Log => Summary
+Đây là cách để gỡ lỗi khi cài SQL Server (đọc log để bieeys lỗi gì và xử lý)
+
+7. Trên máy
+InstanceId là MSSQL16.SQLEXPRESS01(cái đặt tên khi cài); MSSQL16.SQLEXPRESS
+C:\Program Files\Microsoft SQL Server\MSSQL16.SQLEXPRESS\MSSQL\Binn => truy cập vào để thấy file sqlsrv.exe chính là class Student (không tạo câu lệnh new đối tượng thì không dùng được, new tương đương với việc tải vào ram cùng các thông tin => khi vào trong ram thì sẽ được đặt tên - instanceID)
+
+8. Services.msc
+Những loại app đặc biệt, chạy ngầm
+server chạy ngầm và được thể hiện ở services.msc (thể hiện các instance trong ram)
+app chạy ngầm, không lộ rõ, không có UI, không lộ trên task bar) để dùng chuột tương tác - BACKGROUND PROCESS. 
+Dùng để cung cấp dịch vụ cho ai đó xài, những loại app này gọi tên khác là service. => có icon là bánh răng
+=>> SQL Server (có thể thay đổi chạy hoặc ngừng chạy) (đôi lúc còn gọi là database engine, DB ENGINE )
+  
+=> Cài thêm một server giống như new một instace mới => cả hai tên server đều được map vào cùng một file exe nhưng trỏ tới vùng ram khác nhau 
+
+9. Client
+cần nó phục vụ thì mình phải giao tiếp với nó
+tOOL giao tiếp với server ==> Theo quan điểm của SQL đó là SSMS (SQL Server Management Studio => được cài trên program file (x86) 32 bit
+Đây chính là Client tool 
+SSMS giao tiếp với server thông qua text, viết theo cú pháp gọi là SQL (STRUCTURED QUERY LANGUAGE, ngôn ngữ truy vấn có cấu trúc) (IBM), TOOL mã hóa text gửi cho server. (hoa thường không phân biệt nhưng nên viết hoa)
+Tại sao lại phải tách: giúp phân tán xử lý, available mọi nơi, có thể đem dữ liệu đi mọi nơi (có thể lấy data trên máy người khác)
+Ý nghĩa tải sever ở máy này và client ở máy khác. (học sau)
+
+Những phầm mềm thấy trên task bar và có UI để tương tác được gọi là FOREGROUND 
+
+-------------------------------------------------------------
+
+

@@ -1,0 +1,14 @@
+BẮT ĐẦU VÀO THẾ GIỚI DATABASE
+
+1. System Database
+META-DATA => 	SIÊU DỮ LIỆU
+		CÁC DỮ LIỆU DÙNG ĐỂ QUẢN LÝ DỮ LIỆU KHÁC
+(giống System 32 quản lý Windows)
+
+2. Câu lệnh SELECT
+SELECT * FROM Customers
+
+data được thể hiện theo dòng và cột
+=> việc dùng ssms chỉ là tác động thô đến dữ liệu, khi lập trình app sẽ phải thiết kế màn hình nhập liệu để sử dụng ngôn ngữ lập trình để đưa dữ liệu vào trong server trực tiếp (chỉ dùng ssms để xem lại dữ liệu) (có nhiều cách để đưa dữ liệu vào và lấy dữ liệu ra từ server, nhớ rằng SQL server chỉ là một tool UI giao tiếp với server thông qua text, ngôn ngữ truy vấn có cấu trúc)
+=> HỌC LÀ HỌC CÁCH GIAO TIẾP VỚI SERVER (THÔNG QUA CÚ PHÁP SQL)
+https://www.techonthenet.com/sql_server/functions/index.php
