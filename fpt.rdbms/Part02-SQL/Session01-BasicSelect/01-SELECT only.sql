@@ -37,4 +37,15 @@ SELECT N'Nguyễn' + N' Trà My'
 -- 6. Tính tuổi
 SELECT YEAR(GETDATE()) - 1999
 
--- SELECT N'Nguyễn' + N' Trà My' + (YEAR(GETDATE()) - 1999)
+-- SELECT N'Nguyễn' + N' Trà My' + (YEAR(GETDATE()) - 1999) 
+-- LỖI VÌ LỘN XỘN KIỂU DATA MÁY KHÔNG XỬ LÝ ĐƯỢC
+-- XỬ LÝ BẰNG CONVERT VÀ CAST
+
+-- Dùng convert, tên table có dấu cách dùng []
+SELECT N'Nguyễn' + N' Trà My ' + CONVERT(VARCHAR, YEAR(GETDATE()) - 1999) + N' tuổi' AS [My Profile]
+-- Dúng cast, tên table không có dấu cách không cần ngoạc vuông []
+SELECT N'Nguyễn' + N' Trà My ' + CAST(YEAR(GETDATE()) - 1999 AS VARCHAR) + N' tuổi' AS MyProfile
+
+-- 7. Phép nhân hai số
+SELECT 10 * 10 AS [10 *10]
+
