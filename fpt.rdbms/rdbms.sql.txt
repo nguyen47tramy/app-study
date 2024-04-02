@@ -12,3 +12,13 @@ data được thể hiện theo dòng và cột
 => việc dùng ssms chỉ là tác động thô đến dữ liệu, khi lập trình app sẽ phải thiết kế màn hình nhập liệu để sử dụng ngôn ngữ lập trình để đưa dữ liệu vào trong server trực tiếp (chỉ dùng ssms để xem lại dữ liệu) (có nhiều cách để đưa dữ liệu vào và lấy dữ liệu ra từ server, nhớ rằng SQL server chỉ là một tool UI giao tiếp với server thông qua text, ngôn ngữ truy vấn có cấu trúc)
 => HỌC LÀ HỌC CÁCH GIAO TIẾP VỚI SERVER (THÔNG QUA CÚ PHÁP SQL)
 https://www.techonthenet.com/sql_server/functions/index.php
+
+3. Primary Key
+
+- Vì kiến trúc mô hình dữ liệu quan hệ được biểu diễn dưới dạng bảng theo hàng và cột, mỗi hàng đại diện cho một đối tượng dữ liệu ở ngoài đời với các thông tin đi kèm, nhìn tương đương như cách ta new tạo mới một object trong oop, cấu trúc table nhìn như một class.
+
+- Primary Key là khái niệm quan trọng để xác định duy nhất một dòng dữ liệu. (giúp ta phân biệt, nhận diện được dòng này với dòng kia) 
+
+4. References/Relationship
+
+- Thuật ngữ mô tả việc tách table để đảm bảo an toàn thông tin, phân mảnh thông tin
