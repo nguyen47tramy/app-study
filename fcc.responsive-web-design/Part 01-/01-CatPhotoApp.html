@@ -31,23 +31,107 @@
 - <form></form>: LÀ PHẦN TỬ DÙNG ĐỂ TẠO BIỂU MẪU TRÊN TRANG WEB, CHO PHÉP NGƯỜI DÙNG NHẬP LIỆU VÀ GỬI DỮ LIỆU LÊN MÁY CHỦ ĐỂ XỬ LÝ
 - <form> gồm nhiều phần tử và thuộc tính để xử lý dữ liệu:
     >> Thuộc tính action="url-hoặc-đường-dẫn-mà-dữ-liệu-trong-form-được-gửi-đến"
-    >> Phần tử <input> để tạo các trường nhập liệu/chứa dữ liệu người dùng có thể chỉnh sửa trên trang web. <input> là phần tử tự đóng/  self-closing. Các thuộc tính có thể khai báo trong <input> 
-    >>
+    >> Phần tử <input> để tạo các trường nhập liệu/chứa dữ liệu người dùng có thể chỉnh sửa trên trang web. <input> là phần tử tự đóng/  self-closing. Các thuộc tính có thể khai báo trong <input> bao gồm type="cách-dữ-liệu-trong-trường-nhập-được-hiển-thị-và-xử-lý" ví dụ text/password/checkbox/radio/file/number/date/email/submit/reset...; name="tên-biến-cho-dữ-liệu-nhập-khi-gửi-form-đi"; placeholder="gợi-ý-cho-văn-bản-nhập"; required/checked nếu tường dữ liệu là bắt buộc, thuộc tính required/checked không gán với giá trị 
+    >> Phần tử <button></button> tạo nút trên trang web cho phép người dùng tương tác và thực hiện hành động cụ thể, có thể chứa văn bản và hình ảnh. NÚT MẶC ĐỊNH SẼ ĐƯỢC GỬI ĐẾN ĐƯỜNG DẪN ĐƯỢC QUY ĐỊNH TRONG THUỘC TÍNH action (!!! NGUY HIỂM NẾU CÓ NHIỀU NÚT, nêu đạt thêm thuộc tính type="submit-or-reset" cho nút để dễ quản lý)
+    >> Phần tử <label></label> NEST PHẦN TỬ INPUT VÀ (DẤU CÁCH)CHỮ  TRONG LABEL GIÚP KHI CLICK VÀ CHỮ ĐỒNG THỜI SẼ CHỌN radio button ĐÓ
+    >> Thuộc tính id
+    >> Thuộc tính value="giá trị khi gửi form" nếu như không quy định giá trị thì form gửi đi sẽ có giá trị nút-thuộc-tính-name=on
+    >> Phần tử <fieldset></fieldset> được dùng để gom nhóm các phần tử liên quan trong form, thường được kết hợp với phần tử <legend>Tên nhóm</legend>
+
+- Thứ tự của các thuộc tính không phần tử không quan trọng.
+- Nếu quy định thuộc tính name giá trị bằng nhau cho các radio button thì khi chọn radio button nào sẽ đồng thời bỏ chọn radio button còn lại.
+- Có hai cách để kết nối vb với phần tử checkbox/radio.. Một là nest phần tử <input> và vb vào trong thẻ <label></label>. Hai là dùng từ khóa for="id-của-ptu-đã-khai-báo-trong-input" trong <label>; đặt ở bên phải phải <input> (có cách)
+
+- <footer></footer>: Thường chứa các thông tin bổ sung
+
+- <head></head>: Thường chứa thẻ <title>Tên được hiển thị trên browser</title>
+
+- <html></html>: Tất cả nội dung trên trang đều nằm trong thẻ này. THẺ NÊN CÓ THUỘC TÍNH QUY ĐỊNH NGÔN NGỮ lang="ngôn-ngữ"
+
+- <!DOCTYPE html>: TẤT CẢ CÁC TRANG NÊN BẮT ĐẦU BẰNG DÒNG NÀY. (DOCUMENT TYPE DECLARATION) Dùng để chỉ định phiên bản html của tài liệu và hướng dẫn trình duyệt về cách phân tích và hiển thị nội dung. ĐÂY KHÔNG PHẢI THẺ HTML MÀ CHỈ LÀ MỘT DÒNG VĂN BẢN ĐẶC BIỆT, BẢO TRÌNH DUYỆT LÀ TRANG ĐANG ĐƯỢC VIẾT BẰNG HTML5
+
+- <meta>: lầ phần tử tự đóng, chứa thông tin mô tả về tài liệu, như metadata, ví dụ khai báo bộ mã ký tự charset
 ------------------------------------
 -->
 
 
+<!-- Dòng khai báo định dạng tài liệu -->
+<!DOCTYPE html>
 
-<html>
+<html lang="en">
+  <!-- Thẻ thông tin HEAD -->
+  <head>
+    <meta charset="utf-8">
+    <title>CatPhotoApp</title>
+  </head>
+  <!-- Thẻ thông tin chính hiển thị trên trang: gồm <main/> và <footer/> -->
   <body>
-
+    <!-- Thông tin chính của trang -->
     <main>
-      <h1>CatPhotoApp</h1> 
-      <h2>Cat Photos</h2>
-      <p>See more <a href="đích-đến-của-liên-kết">cat photos</a> in ours galery.</p> 
-      <img src="" alt="mô-tả-chi-tiết-cho-hình-ảnh">
-      
+      <h1>CatPhotoApp</h1>
+      <!-- section 1 -->
+      <section>
+        <h2>Cat Photos</h2>
+        
+        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </section>
+      <!-- section 2: un-ordered list <ul> và ordered list <ol> -->
+      <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>  
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+        </figure>
+      </section>
+      <!-- section 3: Biểu mẫu nhập liệu <form/> -->
+      <section>
+        <h2>Cat Form</h2>
+
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <!-- Trường thông tin 1 indoor-outdoor -->
+          <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+          </fieldset>
+          <!-- Trường thông tin 2 personality -->
+          <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label for="energetic">Energetic</label>
+          </fieldset>
+          <!-- Gửi dữ liệu -->
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+          <button type="submit">Submit</button>
+        </form>
+
+      </section>
+
     </main>
+    <!-- footnote -->
+    <footer>
+      <p>
+        No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
 
   </body>
 </html>
