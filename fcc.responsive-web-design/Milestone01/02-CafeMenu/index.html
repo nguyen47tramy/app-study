@@ -1,0 +1,127 @@
+<!-- 
+----------------------LÝ THUYẾT ------------------------------
+- <style></style>: Được dùng để nhúng CSS (Cascading Style Sheets) trực tiếp vào tài liệu HTML. PHẢI ĐƯỢC ĐẶT TRONG THẺ <head></head>, 
+    >>sử dụng trình chọn kiểu (type selector): 
+    element, element {
+        property: value;
+    }
+    >>tạo mọt file css và tạo link đến file tạo trong html (không dùng thẻ style)
+    >>sử dụng id selector với id đã được khai báo bên html bằng ví dụ #menu
+    >>sử dụng class selector với class khai báo cho một nhóm phần tử bên html (PHỔ BIẾN), ví dụ:
+    .class-name {
+        styles
+    }
+    tất cả các styles sẽ được áp dụng cho tất cả các phần tử có class-name tương tự
+    >> sử dụng pseudo-selector, tức là lèm các từ khóa định dạng phần tử dựa trên trạng thái cụ thể, pseudo-selector bắt đầu bằng dấu hai chấm (:), ví dụ :hover/ :active/ :focus/ :first-child/ ...
+
+- index.html
+- styles.css 
+/* 
+comment 
+*/
+
+- <link />: thẻ tự đóng, dùng để liên kết tài liệu bên ngoài, thường có thuộc tính rel="mqh-giữa-tài-nguyên-hiện-tại-và-tài-nguyen-được-liên-kết" ví dụ để trình duyệt đọc trang kiên kết là trang tạo kiểu thì rel="stylesheet"; href="url-tài-nguyên-muốn-liên-kết";..
+    
+- Thuộc tính name, content trong thẻ <meta />: cung cấp thông tin mô tả về tài liệu html
+    >>name xác định tên và mục đích sử dụng, ví dụ name="description/ keywords/ viewport/ author/..."
+    >>content xác định nội dung hoặc giá trị liên quan đến name
+    >>VÍ DỤ: <meta name="viewport" content="width=device-width, initial-scale=1.0" /> DÙNG ĐỂ XÁC ĐỊNH CÁCH HIỂN THỊ TRÊN THIẾT BỊ DI ĐỘNG, chỉ định chiều rộng của trang web sẽ tự động điều chỉnh để phù hợp với kích thước màn hình của thiết bị, tỷ lên ban đầu (initial scale) sẽ là 1.0 
+
+- <div></div>: Được sử dụng để tạo khối hoặc vùng chứa trong html, không mang ý nghĩa đặc thù
+
+- Thuộc tính CSS background-image: url(path/to/image.jpg)
+
+- <article></article>: Dùng để đánh dấu một nội dung độc lập, đã có ý nghĩa hoàn chỉnh, ví dụ là bài viết, bài blog, giá trong menu,... <article> còn có thể chứa <header> <footer để chỉ ra thông tin bổ sung
+
+- <p></p>: Là phần tử khối (block-level), tức chiều rộng của nó là chiều rộng của khối cha (parent element). KHI MUỐN ĐẶT 2 <p> INLINE THÌ <p></p><p></p> = 100% width (TỨC ĐẶT 2 THẺ <p> SÁT NHAU)
+TRONG HTML, CÁC PHẦN TỬ ĐƯỢC PHÂN THÀNH HAI LOẠI CHÍNH: BLOCK-LEVEL(các phần tử mặc định sẽ chiếm toàn bộ chiều ngang của phần tử cha chứa nó và bắt đầu trên một dòng mới, ví dụ như <div>, <p>, <h1>, <ul>, <ol>) VÀ INLINE (các phần tử không bắt đầu trên một dòng mới và chỉ chiếm không gian cần thiết để hiển thị nội dung bên trong, ví dụ <span>, <a>, <strong>, <em>,..) 
+
+- <hr>: Phần tử <hr> là phần tử tự đóng, (horizontal rule) được dùng để tạo đường ngang ngăn cách hoặc chia cắt các phần tử khác nhau trong tài liệu
+--------------------------------------------------------------
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe Menu</title>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="menu">
+    <main>
+      <h1>CAMPER CAFE</h1>
+      <p class="established">Est. 2020</p>
+      <hr>
+
+      <section>
+        <h2>Coffee</h2>
+        <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon" />
+        
+        <article class="item">
+          <p class="flavor">French Vanilla</p>
+          <p class="price">3.00</p>
+        </article>
+        
+        <article class="item">
+          <p class="flavor">Caramel Macchiato</p>
+          <p class="price">3.75</p>
+        </article>
+        
+        <article class="item">
+          <p class="flavor">Pumpkin Spice</p>
+          <p class="price">3.50</p>
+        </article>
+        
+        <article class="item">
+          <p class="flavor">Hazelnut</p>
+          <p class="price">4.00</p>
+        </article>
+        
+        <article class="item">
+          <p class="flavor">Mocha</p>
+          <p class="price">4.50</p>
+        </article>
+      </section>
+      
+      <section>
+        <h2>Desserts</h2>
+        <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon" />
+        
+        <article class="item">
+          <p class="dessert">Donut</p>
+          <p class="price">1.50</p>
+        </article>
+        
+        <article class="item">
+          <p class="dessert">Cherry Pie</p>
+          <p class="price">2.75</p>
+        </article>
+        
+        <article class="item">
+          <p class="dessert">Cheesecake</p>
+          <p class="price">3.00</p>
+        </article>
+        
+        <article class="item">
+          <p class="dessert">Cinnamon Roll</p>
+          <p class="price">2.50</p>
+        </article>
+      </section>
+    </main>
+    <hr class="bottom-line">
+    
+    <footer>
+      <p>
+        <a href="https://www.freecodecamp.org" target="_blank">Visit our website</a>
+      </p>
+      <p class="address">123 Free Code Camp Drive</p>
+    
+    </footer>
+  </div>
+</body>
+
+</html>
